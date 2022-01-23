@@ -23,9 +23,9 @@ sudo apt-get install -y nodejs
 #apt-get install -y nodejs
 
     echo "${green}================================================================================${normal}"
-    echo -e "${normal}\nInstall of node and Yarn package manager is complete.${normal}"
+    echo -e "${normal}Install of node and Yarn package manager is complete.${normal}"
     echo "${green}================================================================================${normal}"
-    echo -e "\nVersion of Node.js installed is${yellow}"
+    echo -e "Version of Node.js installed is${yellow}"
 node -v
     echo "${green}================================================================================${normal}"
     echo -e "${normal}Installed Yarn package manager${cyan}"
@@ -39,10 +39,14 @@ If you don't want to continue press Ctrl-C to abort."
 #Optional: install build tools
 #To compile and install native addons from npm you may also need to install build tools:
     
-## use `sudo` on Ubuntu or run this as root on debian
+## use `sudo` on Ubuntu
+echo -e "${green}installing build tools.${normal}"
 sudo apt-get install -y build-essential
 
-    echo -e "${green}\nInstall is complete.${normal}"
-    echo -e "${cyan}Have fun building${normal}"
+## run this as root on debian
+#apt-get install -y build-essential
+
+    echo -e "${green}Install is complete.${normal}"
+    echo -e "${cyan}Have fun building.${normal}"
     
 exit
